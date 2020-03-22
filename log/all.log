@@ -1,0 +1,406 @@
+ [INFO] 2020-03-07 15:00:07,606 [MainThread:17216] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-07 15:09:36,688 [MainThread:17216] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\utils\http_format.py changed, reloading.
+ [INFO] 2020-03-07 15:09:37,511 [MainThread:13720] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-07 15:14:33,683 [MainThread:13720] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\user\user_view.py changed, reloading.
+ [INFO] 2020-03-07 15:14:34,488 [MainThread:4824] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-07 15:14:45,206 [MainThread:4824] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\user\user_view.py changed, reloading.
+ [INFO] 2020-03-07 15:14:46,017 [MainThread:13812] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-07 15:15:52,520 [MainThread:13812] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\user\user_view.py changed, reloading.
+ [INFO] 2020-03-07 15:15:53,341 [MainThread:15212] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-07 15:16:22,852 [MainThread:15212] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\user\user_view.py changed, reloading.
+ [INFO] 2020-03-07 15:16:23,634 [MainThread:9424] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-07 15:19:05,760 [MainThread:9424] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\user\user_view.py changed, reloading.
+ [INFO] 2020-03-07 15:19:06,579 [MainThread:18272] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-07 15:21:25,585 [MainThread:18272] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\user\user_view.py changed, reloading.
+ [INFO] 2020-03-07 15:21:26,390 [MainThread:8360] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-07 15:21:56,996 [MainThread:8360] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\user\user_view.py changed, reloading.
+ [INFO] 2020-03-07 15:21:57,767 [MainThread:10820] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-07 15:22:08,418 [MainThread:10820] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\user\user_view.py changed, reloading.
+ [INFO] 2020-03-07 15:30:19,364 [MainThread:16096] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-07 16:05:51,703 [MainThread:16096] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\user\users_view.py changed, reloading.
+ [INFO] 2020-03-07 16:05:52,499 [MainThread:14120] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-07 16:19:06,892 [MainThread:14120] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\user\users_view.py changed, reloading.
+ [INFO] 2020-03-07 16:27:03,771 [MainThread:14300] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-07 16:31:52,371 [MainThread:14300] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\user\users_view.py changed, reloading.
+ [INFO] 2020-03-07 16:31:53,190 [MainThread:5952] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-07 16:32:06,264 [MainThread:5952] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\user\users_view.py changed, reloading.
+ [INFO] 2020-03-07 16:32:07,078 [MainThread:11012] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-07 16:32:22,479 [MainThread:11012] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\user\users_view.py changed, reloading.
+ [INFO] 2020-03-07 16:32:23,262 [MainThread:17600] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-07 16:35:33,613 [MainThread:17600] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\user\users_view.py changed, reloading.
+ [INFO] 2020-03-07 16:35:39,610 [MainThread:15992] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-07 16:46:45,441 [MainThread:15992] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\user\users_view.py changed, reloading.
+ [INFO] 2020-03-07 16:46:46,239 [MainThread:628] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-07 16:48:35,034 [MainThread:628] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\django_interface_project\settings.py changed, reloading.
+ [INFO] 2020-03-07 16:48:35,839 [MainThread:7260] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-07 16:51:23,983 [MainThread:7260] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\user\users_view.py changed, reloading.
+ [INFO] 2020-03-07 16:51:24,794 [MainThread:8404] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-07 16:51:31,988 [MainThread:8404] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\user\users_view.py changed, reloading.
+ [INFO] 2020-03-07 16:51:32,790 [MainThread:11020] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-07 16:51:42,328 [MainThread:11020] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\user\users_view.py changed, reloading.
+ [INFO] 2020-03-07 16:51:43,133 [MainThread:7328] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-07 16:51:56,181 [MainThread:7328] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\user\users_view.py changed, reloading.
+ [INFO] 2020-03-07 16:51:56,982 [MainThread:7700] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-07 16:58:53,712 [MainThread:7700] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\user\users_view.py changed, reloading.
+ [INFO] 2020-03-07 16:58:54,518 [MainThread:17312] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-07 17:51:41,014 [MainThread:17312] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\django_interface_project\urls.py changed, reloading.
+ [INFO] 2020-03-07 17:51:41,852 [MainThread:17948] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-07 17:53:02,066 [MainThread:17948] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\django_interface_project\urls.py changed, reloading.
+ [INFO] 2020-03-07 17:53:02,918 [MainThread:7732] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-07 17:53:44,990 [MainThread:7732] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\user\user_info_view.py changed, reloading.
+ [INFO] 2020-03-07 17:53:45,808 [MainThread:6760] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-07 17:54:52,170 [MainThread:6760] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\user\users_view.py changed, reloading.
+ [INFO] 2020-03-07 17:54:53,009 [MainThread:796] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-07 17:55:07,188 [MainThread:796] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\user\users_view.py changed, reloading.
+ [INFO] 2020-03-07 17:55:07,982 [MainThread:9164] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-07 17:56:14,530 [MainThread:9164] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\user\user_info_view.py changed, reloading.
+ [INFO] 2020-03-07 17:56:15,320 [MainThread:17544] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-07 17:57:13,860 [MainThread:17544] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\user\user_info_view.py changed, reloading.
+ [INFO] 2020-03-07 17:57:14,687 [MainThread:7740] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-07 17:57:30,003 [MainThread:7740] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\user\user_info_view.py changed, reloading.
+ [INFO] 2020-03-07 17:57:30,793 [MainThread:13760] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-07 17:58:30,523 [MainThread:13760] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\user\user_info_view.py changed, reloading.
+ [INFO] 2020-03-07 17:58:31,335 [MainThread:16780] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-07 17:59:11,111 [MainThread:16780] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\user\user_info_view.py changed, reloading.
+ [INFO] 2020-03-07 17:59:11,927 [MainThread:17232] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-07 17:59:20,259 [MainThread:17232] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\user\user_info_view.py changed, reloading.
+ [INFO] 2020-03-07 17:59:21,048 [MainThread:8028] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-07 17:59:48,097 [MainThread:8028] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\user\user_info_view.py changed, reloading.
+ [INFO] 2020-03-07 17:59:48,895 [MainThread:9920] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-12 22:44:24,561 [MainThread:12240] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [WARNING] 2020-03-12 22:44:40,538 [Thread-1:11868] [django.request:228] [log:log_response] - Not Found: /
+ [WARNING] 2020-03-12 22:44:40,539 [Thread-1:11868] [django.server:157] [basehttp:log_message] - "GET / HTTP/1.1" 404 2073
+ [WARNING] 2020-03-12 22:44:40,585 [Thread-1:11868] [django.request:228] [log:log_response] - Not Found: /favicon.ico
+ [WARNING] 2020-03-12 22:44:40,585 [Thread-1:11868] [django.server:157] [basehttp:log_message] - "GET /favicon.ico HTTP/1.1" 404 2124
+ [WARNING] 2020-03-12 22:44:49,901 [Thread-1:11868] [django.request:228] [log:log_response] - Not Found: /login
+ [WARNING] 2020-03-12 22:44:49,902 [Thread-1:11868] [django.server:157] [basehttp:log_message] - "GET /login HTTP/1.1" 404 2106
+ [ERROR] 2020-03-12 22:45:30,997 [Thread-1:11868] [interface:30] [users_view:get] - {"username": [{"message": "This field is required.", "code": "required"}], "password": [{"message": "This field is required.", "code": "required"}]}
+ [ERROR] 2020-03-12 22:45:31,036 [Thread-1:11868] [django.request:228] [log:log_response] - Internal Server Error: /api/backend/users/
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PythonTest\django_interface_project\interface_main\views\user\users_view.py", line 31, in get
+    raise MyException()
+interface_main.exception.my_exception.MyException: 参数错误
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py", line 21, in process_exception
+    return response_failed(code, message)
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 22, in response_failed
+    return response_json(False, code, message, {})
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 14, in response_json
+    return JsonResponse(result, safe=False)
+  File "D:\python3.6.5\lib\site-packages\django\http\response.py", line 587, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\python3.6.5\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\python3.6.5\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\python3.6.5\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python3.6.5\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\python3.6.5\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'type' is not JSON serializable
+ [ERROR] 2020-03-12 22:45:31,040 [Thread-1:11868] [django.server:157] [basehttp:log_message] - "GET /api/backend/users/ HTTP/1.1" 500 123333
+ [INFO] 2020-03-12 23:14:38,241 [MainThread:7572] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-12 23:15:06,284 [Thread-1:13820] [django.server:157] [basehttp:log_message] - "OPTIONS /api/backend/users/ HTTP/1.1" 200 0
+ [INFO] 2020-03-12 23:15:06,427 [Thread-1:13820] [django.server:157] [basehttp:log_message] - "POST /api/backend/users/ HTTP/1.1" 200 91
+ [ERROR] 2020-03-12 23:24:13,152 [Thread-3:13368] [django.request:228] [log:log_response] - Internal Server Error: /api/backend/users/
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PythonTest\django_interface_project\interface_main\views\user\users_view.py", line 62, in post
+    raise MyException(message='用户已存在')
+interface_main.exception.my_exception.MyException: 用户已存在
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py", line 21, in process_exception
+    return response_failed(code, message)
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 22, in response_failed
+    return response_json(False, code, message, {})
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 14, in response_json
+    return JsonResponse(result, safe=False)
+  File "D:\python3.6.5\lib\site-packages\django\http\response.py", line 587, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\python3.6.5\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\python3.6.5\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\python3.6.5\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python3.6.5\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\python3.6.5\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'type' is not JSON serializable
+ [ERROR] 2020-03-12 23:24:13,155 [Thread-3:13368] [django.server:157] [basehttp:log_message] - "POST /api/backend/users/ HTTP/1.1" 500 124073
+ [INFO] 2020-03-12 23:24:30,788 [Thread-3:13368] [django.server:157] [basehttp:log_message] - "POST /api/backend/users/ HTTP/1.1" 200 91
+ [INFO] 2020-03-15 13:19:49,444 [MainThread:11092] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-15 13:20:04,249 [Thread-1:10264] [django.server:157] [basehttp:log_message] - "GET /api/backend/users/?username=bbb&password=12345 HTTP/1.1" 200 91
+ [INFO] 2020-03-15 13:20:08,149 [Thread-2:5068] [django.server:157] [basehttp:log_message] - "OPTIONS /api/backend/users/ HTTP/1.1" 200 0
+ [INFO] 2020-03-15 13:20:08,153 [Thread-1:10264] [django.server:157] [basehttp:log_message] - "DELETE /api/backend/users/ HTTP/1.1" 200 95
+ [INFO] 2020-03-15 13:22:09,030 [Thread-1:10264] [django.server:157] [basehttp:log_message] - "DELETE /api/backend/users/ HTTP/1.1" 200 95
+ [INFO] 2020-03-15 13:22:10,716 [Thread-1:10264] [django.server:157] [basehttp:log_message] - "GET /api/backend/users/?username=bbb&password=12345 HTTP/1.1" 200 91
+ [INFO] 2020-03-15 13:22:13,246 [Thread-1:10264] [django.server:157] [basehttp:log_message] - "DELETE /api/backend/users/ HTTP/1.1" 200 95
+ [INFO] 2020-03-15 13:22:25,109 [Thread-1:10264] [django.server:157] [basehttp:log_message] - "GET /api/backend/users/?username=bbb&password=12345 HTTP/1.1" 200 91
+ [INFO] 2020-03-15 13:22:28,518 [Thread-1:10264] [django.server:157] [basehttp:log_message] - "DELETE /api/backend/users/ HTTP/1.1" 200 95
+ [INFO] 2020-03-15 13:32:14,625 [Thread-3:4060] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-15 13:32:17,575 [Thread-4:9464] [django.server:157] [basehttp:log_message] - "OPTIONS /api/backend/users/ HTTP/1.1" 200 0
+ [INFO] 2020-03-15 13:32:17,577 [Thread-3:4060] [django.server:157] [basehttp:log_message] - "DELETE /api/backend/users/ HTTP/1.1" 200 95
+ [INFO] 2020-03-15 13:32:25,639 [Thread-3:4060] [django.server:157] [basehttp:log_message] - "DELETE /api/backend/users/ HTTP/1.1" 200 95
+ [INFO] 2020-03-15 13:32:26,957 [Thread-3:4060] [django.server:157] [basehttp:log_message] - "GET /api/backend/users/?username=bbb&password=12345 HTTP/1.1" 200 91
+ [INFO] 2020-03-15 13:32:28,278 [Thread-3:4060] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-15 13:32:37,794 [Thread-3:4060] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-15 13:32:39,830 [Thread-3:4060] [django.server:157] [basehttp:log_message] - "DELETE /api/backend/users/ HTTP/1.1" 200 95
+ [INFO] 2020-03-15 13:43:47,735 [MainThread:11092] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py changed, reloading.
+ [INFO] 2020-03-15 13:43:48,501 [MainThread:7564] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-15 13:44:47,562 [MainThread:7564] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py changed, reloading.
+ [INFO] 2020-03-15 13:44:48,327 [MainThread:4056] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-15 13:46:24,744 [MainThread:4056] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py changed, reloading.
+ [INFO] 2020-03-15 13:46:25,530 [MainThread:9924] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-15 13:47:00,426 [MainThread:9924] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py changed, reloading.
+ [INFO] 2020-03-15 13:47:01,199 [MainThread:12184] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-15 13:47:20,920 [MainThread:12184] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py changed, reloading.
+ [INFO] 2020-03-15 13:47:21,702 [MainThread:3064] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-15 13:47:31,098 [MainThread:3064] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py changed, reloading.
+ [INFO] 2020-03-15 13:47:31,874 [MainThread:9432] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-15 13:48:48,968 [MainThread:9432] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py changed, reloading.
+ [INFO] 2020-03-15 13:48:49,748 [MainThread:6540] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-15 13:49:15,237 [MainThread:6540] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py changed, reloading.
+ [INFO] 2020-03-15 13:49:16,010 [MainThread:11532] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-15 13:49:39,298 [MainThread:11532] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py changed, reloading.
+ [INFO] 2020-03-15 13:49:40,158 [MainThread:10496] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-15 13:51:02,004 [MainThread:10496] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\django_interface_project\urls.py changed, reloading.
+ [INFO] 2020-03-15 13:51:02,823 [MainThread:11084] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-15 13:51:30,445 [MainThread:11084] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\django_interface_project\urls.py changed, reloading.
+ [INFO] 2020-03-15 13:51:31,233 [MainThread:2264] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-15 13:52:02,256 [MainThread:2264] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\django_interface_project\urls.py changed, reloading.
+ [INFO] 2020-03-15 13:52:03,072 [MainThread:5464] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-15 13:52:29,787 [MainThread:9044] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-15 13:55:04,812 [Thread-1:3432] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-15 13:55:04,812 [Thread-2:11648] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 13:55:25,905 [Thread-3:10524] [django.server:157] [basehttp:log_message] - "OPTIONS /api/backend/users/ HTTP/1.1" 200 0
+ [INFO] 2020-03-15 13:55:25,910 [Thread-2:11648] [django.server:157] [basehttp:log_message] - "DELETE /api/backend/users/ HTTP/1.1" 200 95
+ [INFO] 2020-03-15 13:55:52,630 [Thread-2:11648] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 13:55:52,630 [Thread-1:3432] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-15 13:56:13,927 [Thread-1:3432] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [WARNING] 2020-03-15 13:56:13,963 [Thread-1:3432] [django.request:228] [log:log_response] - Not Found: /favicon.ico
+ [WARNING] 2020-03-15 13:56:13,963 [Thread-1:3432] [django.server:157] [basehttp:log_message] - "GET /favicon.ico HTTP/1.1" 404 2228
+ [INFO] 2020-03-15 13:56:23,139 [Thread-1:3432] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 13:56:25,134 [Thread-1:3432] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 13:56:42,411 [Thread-1:3432] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 13:56:43,204 [Thread-1:3432] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 13:56:43,466 [Thread-1:3432] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 13:56:43,707 [Thread-1:3432] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 13:56:43,922 [Thread-1:3432] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 13:56:44,131 [Thread-1:3432] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 13:56:44,355 [Thread-1:3432] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 13:58:28,139 [Thread-1:3432] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 13:58:32,943 [Thread-1:3432] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [WARNING] 2020-03-15 13:58:35,690 [Thread-1:3432] [django.request:228] [log:log_response] - Not Found: /
+ [WARNING] 2020-03-15 13:58:35,690 [Thread-1:3432] [django.server:157] [basehttp:log_message] - "GET / HTTP/1.1" 404 2177
+ [WARNING] 2020-03-15 13:58:40,545 [Thread-1:3432] [django.request:228] [log:log_response] - Not Found: /
+ [WARNING] 2020-03-15 13:58:40,545 [Thread-1:3432] [django.server:157] [basehttp:log_message] - "GET / HTTP/1.1" 404 2177
+ [WARNING] 2020-03-15 13:58:43,140 [Thread-1:3432] [django.request:228] [log:log_response] - Not Found: /
+ [WARNING] 2020-03-15 13:58:43,140 [Thread-1:3432] [django.server:157] [basehttp:log_message] - "GET / HTTP/1.1" 404 2177
+ [INFO] 2020-03-15 13:58:56,035 [MainThread:7452] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-15 13:59:07,079 [Thread-1:1240] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 13:59:07,079 [Thread-2:11396] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-15 13:59:19,276 [Thread-2:11396] [django.server:157] [basehttp:log_message] - "DELETE /api/backend/users/ HTTP/1.1" 200 95
+ [INFO] 2020-03-15 13:59:23,891 [Thread-2:11396] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 13:59:23,891 [Thread-1:1240] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-15 14:01:34,025 [MainThread:7452] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py changed, reloading.
+ [INFO] 2020-03-15 14:01:34,799 [MainThread:3132] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-15 14:01:53,406 [MainThread:3132] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py changed, reloading.
+ [INFO] 2020-03-15 14:01:54,146 [MainThread:428] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-15 14:02:38,440 [Thread-1:1824] [django.server:157] [basehttp:log_message] - "DELETE /api/backend/users/ HTTP/1.1" 200 95
+ [INFO] 2020-03-15 14:02:47,542 [Thread-1:1824] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 14:02:47,544 [Thread-2:9616] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-15 14:08:45,527 [MainThread:428] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py changed, reloading.
+ [INFO] 2020-03-15 14:08:46,294 [MainThread:10652] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-15 14:08:56,027 [Thread-1:11316] [django.server:157] [basehttp:log_message] - "OPTIONS /api/backend/users/ HTTP/1.1" 200 0
+ [INFO] 2020-03-15 14:08:56,032 [Thread-2:11364] [django.server:157] [basehttp:log_message] - "DELETE /api/backend/users/ HTTP/1.1" 200 95
+ [INFO] 2020-03-15 14:09:00,215 [Thread-2:11364] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 14:09:00,216 [Thread-3:9464] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-15 14:09:09,376 [Thread-3:9464] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 14:09:09,377 [Thread-2:11364] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-15 14:09:14,736 [Thread-2:11364] [django.server:157] [basehttp:log_message] - "DELETE /api/backend/users/ HTTP/1.1" 200 95
+ [INFO] 2020-03-15 14:09:16,601 [Thread-2:11364] [django.server:157] [basehttp:log_message] - "GET /api/backend/users/?username=bbb&password=12345 HTTP/1.1" 200 91
+ [INFO] 2020-03-15 14:09:17,755 [Thread-2:11364] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 14:09:17,755 [Thread-3:9464] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-15 14:15:41,616 [Thread-4:768] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 14:15:41,616 [Thread-5:3272] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-15 14:15:45,409 [Thread-5:3272] [django.server:157] [basehttp:log_message] - "DELETE /api/backend/users/ HTTP/1.1" 200 95
+ [INFO] 2020-03-15 14:15:49,265 [Thread-5:3272] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 14:15:49,267 [Thread-4:768] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-15 14:15:58,305 [Thread-4:768] [django.server:157] [basehttp:log_message] - "DELETE /api/backend/users/ HTTP/1.1" 200 95
+ [INFO] 2020-03-15 14:16:10,735 [Thread-4:768] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 14:16:10,735 [Thread-5:3272] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-15 14:17:04,089 [Thread-5:3272] [django.server:157] [basehttp:log_message] - "DELETE /api/backend/users/ HTTP/1.1" 200 95
+ [INFO] 2020-03-15 14:17:18,789 [Thread-4:768] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-15 14:17:18,789 [Thread-5:3272] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 14:18:54,146 [Thread-5:3272] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 14:18:54,146 [Thread-4:768] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-15 14:47:26,907 [MainThread:10652] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py changed, reloading.
+ [INFO] 2020-03-15 14:47:27,677 [MainThread:12140] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-15 14:47:35,859 [MainThread:12140] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py changed, reloading.
+ [INFO] 2020-03-15 14:47:36,686 [MainThread:9528] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-15 14:55:07,363 [Thread-1:6836] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 14:55:07,363 [Thread-2:11340] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-15 14:59:18,837 [Thread-2:11340] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 14:59:18,837 [Thread-1:6836] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-15 15:01:04,592 [Thread-2:11340] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-15 15:01:04,592 [Thread-1:6836] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 15:03:14,763 [Thread-2:11340] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-15 15:03:14,763 [Thread-1:6836] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 15:03:20,432 [Thread-2:11340] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-15 15:03:20,432 [Thread-1:6836] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 15:22:48,349 [Thread-4:1668] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-15 15:22:48,356 [Thread-3:5384] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 15:23:08,337 [Thread-3:5384] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 15:23:08,337 [Thread-4:1668] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-15 15:27:19,084 [Thread-4:1668] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 15:27:19,084 [Thread-3:5384] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-15 15:27:26,796 [Thread-5:11812] [django.server:157] [basehttp:log_message] - "OPTIONS /api/backend/users/ HTTP/1.1" 200 0
+ [INFO] 2020-03-15 15:27:26,799 [Thread-3:5384] [django.server:157] [basehttp:log_message] - "DELETE /api/backend/users/ HTTP/1.1" 200 95
+ [INFO] 2020-03-15 15:49:34,246 [Thread-6:1484] [django.server:157] [basehttp:log_message] - "GET /api/backend/users/?username=bbb&password=12345 HTTP/1.1" 200 91
+ [INFO] 2020-03-15 15:49:35,274 [Thread-7:3412] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-15 15:49:35,274 [Thread-6:1484] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 16:01:22,109 [Thread-8:2636] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 16:01:22,111 [Thread-9:6008] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-15 16:04:31,384 [Thread-9:6008] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 16:04:31,385 [Thread-8:2636] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-15 16:09:48,344 [Thread-10:11180] [django.server:157] [basehttp:log_message] - "OPTIONS /api/backend/users/ HTTP/1.1" 200 0
+ [INFO] 2020-03-15 16:09:48,347 [Thread-11:4180] [django.server:157] [basehttp:log_message] - "DELETE /api/backend/users/ HTTP/1.1" 200 95
+ [INFO] 2020-03-15 16:09:53,622 [Thread-11:4180] [django.server:157] [basehttp:log_message] - "GET /api/backend/users/?username=bbb&password=12345 HTTP/1.1" 200 91
+ [INFO] 2020-03-15 16:09:54,780 [Thread-11:4180] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 16:09:54,780 [Thread-12:5384] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-15 16:19:38,353 [Thread-13:11396] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 16:19:38,353 [Thread-14:2124] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-15 16:19:45,140 [Thread-13:11396] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-15 16:19:45,141 [Thread-14:2124] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 16:23:44,706 [Thread-14:2124] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 16:23:44,707 [Thread-13:11396] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-15 16:24:32,272 [Thread-13:11396] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-15 16:24:32,272 [Thread-14:2124] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-16 21:49:03,631 [MainThread:9412] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-16 21:55:51,417 [Thread-1:13196] [django.server:157] [basehttp:log_message] - "GET /api/backend/users/?username=bbb&password=12345 HTTP/1.1" 200 91
+ [INFO] 2020-03-16 21:55:52,715 [Thread-1:13196] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 12
+ [INFO] 2020-03-16 21:55:52,715 [Thread-2:12992] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-16 22:19:24,587 [MainThread:9412] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\models.py changed, reloading.
+ [INFO] 2020-03-16 22:19:25,390 [MainThread:7064] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-16 22:35:35,886 [MainThread:7064] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\admin.py changed, reloading.
+ [INFO] 2020-03-16 22:35:36,644 [MainThread:9836] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-16 22:40:06,653 [MainThread:9836] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\admin.py changed, reloading.
+ [INFO] 2020-03-16 22:40:07,492 [MainThread:1548] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-16 22:50:09,816 [MainThread:1548] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\django_interface_project\urls.py changed, reloading.
+ [INFO] 2020-03-16 22:50:10,652 [MainThread:12120] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-16 22:50:28,161 [MainThread:12120] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\django_interface_project\urls.py changed, reloading.
+ [INFO] 2020-03-16 22:50:28,993 [MainThread:5948] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-16 22:51:17,798 [MainThread:5948] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\django_interface_project\urls.py changed, reloading.
+ [INFO] 2020-03-16 22:51:18,599 [MainThread:8980] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-16 22:51:46,404 [MainThread:8980] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\django_interface_project\urls.py changed, reloading.
+ [INFO] 2020-03-16 22:51:47,190 [MainThread:8236] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-16 22:52:28,755 [MainThread:8236] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\django_interface_project\urls.py changed, reloading.
+ [INFO] 2020-03-16 22:52:29,573 [MainThread:7268] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-16 22:55:58,770 [MainThread:7268] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_detail_view.py changed, reloading.
+ [INFO] 2020-03-16 22:55:59,601 [MainThread:3252] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-16 22:58:04,070 [MainThread:3252] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_detail_view.py changed, reloading.
+ [INFO] 2020-03-16 22:58:04,843 [MainThread:4632] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-16 23:02:23,622 [MainThread:4632] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_detail_view.py changed, reloading.
+ [INFO] 2020-03-16 23:02:24,427 [MainThread:9080] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-16 23:02:48,705 [MainThread:9080] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_detail_view.py changed, reloading.
+ [INFO] 2020-03-16 23:02:49,495 [MainThread:7104] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-16 23:03:11,605 [MainThread:7104] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_detail_view.py changed, reloading.
+ [INFO] 2020-03-16 23:03:12,433 [MainThread:10088] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-16 23:04:05,686 [MainThread:10088] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_detail_view.py changed, reloading.
+ [INFO] 2020-03-16 23:04:06,464 [MainThread:7316] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-16 23:05:20,428 [MainThread:7316] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_detail_view.py changed, reloading.
+ [INFO] 2020-03-16 23:05:21,221 [MainThread:8964] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-16 23:05:42,122 [MainThread:8964] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_detail_view.py changed, reloading.
+ [INFO] 2020-03-16 23:05:42,930 [MainThread:10772] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-16 23:05:52,221 [MainThread:10772] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_detail_view.py changed, reloading.
+ [INFO] 2020-03-16 23:05:52,988 [MainThread:6500] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-16 23:06:48,151 [MainThread:6500] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_detail_view.py changed, reloading.
+ [INFO] 2020-03-16 23:06:48,943 [MainThread:11864] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-16 23:07:28,198 [MainThread:11864] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\forms\service.py changed, reloading.
+ [INFO] 2020-03-16 23:07:29,004 [MainThread:8184] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-16 23:07:54,548 [MainThread:8184] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_detail_view.py changed, reloading.
+ [INFO] 2020-03-16 23:07:55,339 [MainThread:10324] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-16 23:08:17,464 [MainThread:10324] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_detail_view.py changed, reloading.
+ [INFO] 2020-03-16 23:08:18,260 [MainThread:12980] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-16 23:09:25,295 [MainThread:12980] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_detail_view.py changed, reloading.
+ [INFO] 2020-03-16 23:09:26,068 [MainThread:3252] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-16 23:14:27,295 [MainThread:3252] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_detail_view.py changed, reloading.
+ [INFO] 2020-03-16 23:14:28,077 [MainThread:12920] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-16 23:15:37,529 [MainThread:12920] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_detail_view.py changed, reloading.
+ [INFO] 2020-03-16 23:15:38,296 [MainThread:11692] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-18 21:46:04,018 [MainThread:12532] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-18 21:46:54,133 [Thread-1:3364] [django.server:157] [basehttp:log_message] - "GET /api/backend/users/?username=bbb&password=12345 HTTP/1.1" 200 91
+ [INFO] 2020-03-18 21:46:55,445 [Thread-2:13856] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [WARNING] 2020-03-18 21:46:55,451 [Thread-1:3364] [django.request:228] [log:log_response] - Not Found: /test
+ [WARNING] 2020-03-18 21:46:55,451 [Thread-1:3364] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 404 2366
+ [INFO] 2020-03-18 21:48:07,359 [MainThread:12532] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_list_view.py changed, reloading.
+ [INFO] 2020-03-18 21:48:08,260 [MainThread:1444] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-18 21:48:50,970 [MainThread:1444] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_list_view.py changed, reloading.
+ [INFO] 2020-03-18 21:48:51,781 [MainThread:11228] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-18 21:49:03,576 [MainThread:11228] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_detail_view.py changed, reloading.
+ [INFO] 2020-03-18 21:49:04,458 [MainThread:10672] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-18 21:50:18,221 [MainThread:10672] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_list_view.py changed, reloading.
+ [INFO] 2020-03-18 21:50:19,083 [MainThread:12828] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-18 21:50:26,249 [MainThread:12828] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_list_view.py changed, reloading.
+ [INFO] 2020-03-18 21:50:27,126 [MainThread:8364] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-18 21:52:24,646 [MainThread:8364] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_list_view.py changed, reloading.
+ [INFO] 2020-03-18 21:52:25,426 [MainThread:11448] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-18 22:11:12,114 [MainThread:11448] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_list_view.py changed, reloading.
+ [INFO] 2020-03-18 22:11:12,924 [MainThread:5736] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-18 22:11:33,767 [MainThread:5736] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_list_view.py changed, reloading.
+ [INFO] 2020-03-18 22:11:34,562 [MainThread:12824] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-18 22:15:31,436 [MainThread:12824] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_list_view.py changed, reloading.
+ [INFO] 2020-03-18 22:15:32,289 [MainThread:8816] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-18 22:17:12,474 [MainThread:8816] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_list_view.py changed, reloading.
+ [INFO] 2020-03-18 22:17:13,285 [MainThread:14700] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-18 22:17:19,100 [MainThread:14700] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_list_view.py changed, reloading.
+ [INFO] 2020-03-18 22:17:19,900 [MainThread:6008] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-18 22:17:30,330 [MainThread:6008] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_list_view.py changed, reloading.
+ [INFO] 2020-03-18 22:17:31,137 [MainThread:9568] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-18 22:18:34,328 [MainThread:9568] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_list_view.py changed, reloading.
+ [INFO] 2020-03-18 22:18:35,120 [MainThread:10684] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-18 22:19:20,060 [MainThread:10684] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_list_view.py changed, reloading.
+ [INFO] 2020-03-18 22:19:20,835 [MainThread:6980] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-18 22:20:21,936 [MainThread:6980] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_list_view.py changed, reloading.
+ [INFO] 2020-03-18 22:20:22,707 [MainThread:13016] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-18 22:23:14,259 [MainThread:13016] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_list_view.py changed, reloading.
+ [INFO] 2020-03-18 22:23:15,051 [MainThread:9100] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-18 22:25:17,229 [MainThread:9100] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_list_view.py changed, reloading.
+ [INFO] 2020-03-18 22:25:18,019 [MainThread:10288] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-18 22:26:46,653 [MainThread:10288] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_list_view.py changed, reloading.
+ [INFO] 2020-03-18 22:26:47,446 [MainThread:10224] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-18 22:27:39,313 [MainThread:10224] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_list_view.py changed, reloading.
+ [INFO] 2020-03-18 22:27:40,108 [MainThread:14416] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
