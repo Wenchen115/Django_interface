@@ -404,3 +404,1387 @@ TypeError: Object of type 'type' is not JSON serializable
  [INFO] 2020-03-18 22:26:47,446 [MainThread:10224] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
  [INFO] 2020-03-18 22:27:39,313 [MainThread:10224] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_list_view.py changed, reloading.
  [INFO] 2020-03-18 22:27:40,108 [MainThread:14416] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-29 21:16:57,259 [MainThread:3680] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-29 21:17:53,838 [Thread-1:4688] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 101
+ [ERROR] 2020-03-29 21:17:53,891 [Thread-2:10636] [django.request:228] [log:log_response] - Internal Server Error: /api/backend/user/info/
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PythonTest\django_interface_project\interface_main\views\user\user_info_view.py", line 24, in get
+    raise MyException(message="用户没有登录")
+interface_main.exception.my_exception.MyException: 用户没有登录
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py", line 31, in process_exception
+    return response_failed(code, message)
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 22, in response_failed
+    return response_json(False, code, message, {})
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 14, in response_json
+    return JsonResponse(result, safe=False)
+  File "D:\python3.6.5\lib\site-packages\django\http\response.py", line 587, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\python3.6.5\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\python3.6.5\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\python3.6.5\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python3.6.5\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\python3.6.5\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'type' is not JSON serializable
+ [ERROR] 2020-03-29 21:17:53,894 [Thread-2:10636] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 500 123556
+ [INFO] 2020-03-29 21:17:57,981 [Thread-3:12660] [django.server:157] [basehttp:log_message] - "OPTIONS /api/backend/users/ HTTP/1.1" 200 0
+ [INFO] 2020-03-29 21:17:57,984 [Thread-2:10636] [django.server:157] [basehttp:log_message] - "DELETE /api/backend/users/ HTTP/1.1" 200 95
+ [ERROR] 2020-03-29 21:19:36,652 [Thread-2:10636] [django.request:228] [log:log_response] - Internal Server Error: /api/backend/users/
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PythonTest\django_interface_project\interface_main\views\user\users_view.py", line 38, in get
+    raise MyException(message="登录失败")
+interface_main.exception.my_exception.MyException: 登录失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py", line 31, in process_exception
+    return response_failed(code, message)
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 22, in response_failed
+    return response_json(False, code, message, {})
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 14, in response_json
+    return JsonResponse(result, safe=False)
+  File "D:\python3.6.5\lib\site-packages\django\http\response.py", line 587, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\python3.6.5\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\python3.6.5\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\python3.6.5\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python3.6.5\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\python3.6.5\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'type' is not JSON serializable
+ [ERROR] 2020-03-29 21:19:36,653 [Thread-2:10636] [django.server:157] [basehttp:log_message] - "GET /api/backend/users/?username=aaa&password=123456 HTTP/1.1" 500 124757
+ [ERROR] 2020-03-29 21:19:38,355 [Thread-2:10636] [django.request:228] [log:log_response] - Internal Server Error: /api/backend/users/
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PythonTest\django_interface_project\interface_main\views\user\users_view.py", line 38, in get
+    raise MyException(message="登录失败")
+interface_main.exception.my_exception.MyException: 登录失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py", line 31, in process_exception
+    return response_failed(code, message)
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 22, in response_failed
+    return response_json(False, code, message, {})
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 14, in response_json
+    return JsonResponse(result, safe=False)
+  File "D:\python3.6.5\lib\site-packages\django\http\response.py", line 587, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\python3.6.5\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\python3.6.5\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\python3.6.5\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python3.6.5\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\python3.6.5\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'type' is not JSON serializable
+ [ERROR] 2020-03-29 21:19:38,356 [Thread-2:10636] [django.server:157] [basehttp:log_message] - "GET /api/backend/users/?username=aaa&password=123456 HTTP/1.1" 500 124757
+ [ERROR] 2020-03-29 21:19:39,561 [Thread-2:10636] [django.request:228] [log:log_response] - Internal Server Error: /api/backend/users/
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PythonTest\django_interface_project\interface_main\views\user\users_view.py", line 38, in get
+    raise MyException(message="登录失败")
+interface_main.exception.my_exception.MyException: 登录失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py", line 31, in process_exception
+    return response_failed(code, message)
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 22, in response_failed
+    return response_json(False, code, message, {})
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 14, in response_json
+    return JsonResponse(result, safe=False)
+  File "D:\python3.6.5\lib\site-packages\django\http\response.py", line 587, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\python3.6.5\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\python3.6.5\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\python3.6.5\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python3.6.5\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\python3.6.5\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'type' is not JSON serializable
+ [ERROR] 2020-03-29 21:19:39,562 [Thread-2:10636] [django.server:157] [basehttp:log_message] - "GET /api/backend/users/?username=aaa&password=123456 HTTP/1.1" 500 124757
+ [ERROR] 2020-03-29 21:19:39,779 [Thread-2:10636] [django.request:228] [log:log_response] - Internal Server Error: /api/backend/users/
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PythonTest\django_interface_project\interface_main\views\user\users_view.py", line 38, in get
+    raise MyException(message="登录失败")
+interface_main.exception.my_exception.MyException: 登录失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py", line 31, in process_exception
+    return response_failed(code, message)
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 22, in response_failed
+    return response_json(False, code, message, {})
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 14, in response_json
+    return JsonResponse(result, safe=False)
+  File "D:\python3.6.5\lib\site-packages\django\http\response.py", line 587, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\python3.6.5\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\python3.6.5\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\python3.6.5\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python3.6.5\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\python3.6.5\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'type' is not JSON serializable
+ [ERROR] 2020-03-29 21:19:39,781 [Thread-2:10636] [django.server:157] [basehttp:log_message] - "GET /api/backend/users/?username=aaa&password=123456 HTTP/1.1" 500 124757
+ [ERROR] 2020-03-29 21:19:40,010 [Thread-2:10636] [django.request:228] [log:log_response] - Internal Server Error: /api/backend/users/
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PythonTest\django_interface_project\interface_main\views\user\users_view.py", line 38, in get
+    raise MyException(message="登录失败")
+interface_main.exception.my_exception.MyException: 登录失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py", line 31, in process_exception
+    return response_failed(code, message)
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 22, in response_failed
+    return response_json(False, code, message, {})
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 14, in response_json
+    return JsonResponse(result, safe=False)
+  File "D:\python3.6.5\lib\site-packages\django\http\response.py", line 587, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\python3.6.5\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\python3.6.5\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\python3.6.5\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python3.6.5\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\python3.6.5\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'type' is not JSON serializable
+ [ERROR] 2020-03-29 21:19:40,013 [Thread-2:10636] [django.server:157] [basehttp:log_message] - "GET /api/backend/users/?username=aaa&password=123456 HTTP/1.1" 500 124757
+ [ERROR] 2020-03-29 21:19:40,232 [Thread-2:10636] [django.request:228] [log:log_response] - Internal Server Error: /api/backend/users/
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PythonTest\django_interface_project\interface_main\views\user\users_view.py", line 38, in get
+    raise MyException(message="登录失败")
+interface_main.exception.my_exception.MyException: 登录失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py", line 31, in process_exception
+    return response_failed(code, message)
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 22, in response_failed
+    return response_json(False, code, message, {})
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 14, in response_json
+    return JsonResponse(result, safe=False)
+  File "D:\python3.6.5\lib\site-packages\django\http\response.py", line 587, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\python3.6.5\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\python3.6.5\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\python3.6.5\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python3.6.5\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\python3.6.5\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'type' is not JSON serializable
+ [ERROR] 2020-03-29 21:19:40,233 [Thread-2:10636] [django.server:157] [basehttp:log_message] - "GET /api/backend/users/?username=aaa&password=123456 HTTP/1.1" 500 124757
+ [ERROR] 2020-03-29 21:19:40,428 [Thread-2:10636] [django.request:228] [log:log_response] - Internal Server Error: /api/backend/users/
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PythonTest\django_interface_project\interface_main\views\user\users_view.py", line 38, in get
+    raise MyException(message="登录失败")
+interface_main.exception.my_exception.MyException: 登录失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py", line 31, in process_exception
+    return response_failed(code, message)
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 22, in response_failed
+    return response_json(False, code, message, {})
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 14, in response_json
+    return JsonResponse(result, safe=False)
+  File "D:\python3.6.5\lib\site-packages\django\http\response.py", line 587, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\python3.6.5\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\python3.6.5\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\python3.6.5\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python3.6.5\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\python3.6.5\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'type' is not JSON serializable
+ [ERROR] 2020-03-29 21:19:40,430 [Thread-2:10636] [django.server:157] [basehttp:log_message] - "GET /api/backend/users/?username=aaa&password=123456 HTTP/1.1" 500 124757
+ [ERROR] 2020-03-29 21:19:40,632 [Thread-2:10636] [django.request:228] [log:log_response] - Internal Server Error: /api/backend/users/
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PythonTest\django_interface_project\interface_main\views\user\users_view.py", line 38, in get
+    raise MyException(message="登录失败")
+interface_main.exception.my_exception.MyException: 登录失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py", line 31, in process_exception
+    return response_failed(code, message)
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 22, in response_failed
+    return response_json(False, code, message, {})
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 14, in response_json
+    return JsonResponse(result, safe=False)
+  File "D:\python3.6.5\lib\site-packages\django\http\response.py", line 587, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\python3.6.5\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\python3.6.5\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\python3.6.5\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python3.6.5\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\python3.6.5\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'type' is not JSON serializable
+ [ERROR] 2020-03-29 21:19:40,634 [Thread-2:10636] [django.server:157] [basehttp:log_message] - "GET /api/backend/users/?username=aaa&password=123456 HTTP/1.1" 500 124757
+ [ERROR] 2020-03-29 21:19:40,842 [Thread-2:10636] [django.request:228] [log:log_response] - Internal Server Error: /api/backend/users/
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PythonTest\django_interface_project\interface_main\views\user\users_view.py", line 38, in get
+    raise MyException(message="登录失败")
+interface_main.exception.my_exception.MyException: 登录失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py", line 31, in process_exception
+    return response_failed(code, message)
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 22, in response_failed
+    return response_json(False, code, message, {})
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 14, in response_json
+    return JsonResponse(result, safe=False)
+  File "D:\python3.6.5\lib\site-packages\django\http\response.py", line 587, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\python3.6.5\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\python3.6.5\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\python3.6.5\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python3.6.5\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\python3.6.5\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'type' is not JSON serializable
+ [ERROR] 2020-03-29 21:19:40,843 [Thread-2:10636] [django.server:157] [basehttp:log_message] - "GET /api/backend/users/?username=aaa&password=123456 HTTP/1.1" 500 124757
+ [ERROR] 2020-03-29 21:19:41,033 [Thread-2:10636] [django.request:228] [log:log_response] - Internal Server Error: /api/backend/users/
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PythonTest\django_interface_project\interface_main\views\user\users_view.py", line 38, in get
+    raise MyException(message="登录失败")
+interface_main.exception.my_exception.MyException: 登录失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py", line 31, in process_exception
+    return response_failed(code, message)
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 22, in response_failed
+    return response_json(False, code, message, {})
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 14, in response_json
+    return JsonResponse(result, safe=False)
+  File "D:\python3.6.5\lib\site-packages\django\http\response.py", line 587, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\python3.6.5\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\python3.6.5\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\python3.6.5\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python3.6.5\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\python3.6.5\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'type' is not JSON serializable
+ [ERROR] 2020-03-29 21:19:41,035 [Thread-2:10636] [django.server:157] [basehttp:log_message] - "GET /api/backend/users/?username=aaa&password=123456 HTTP/1.1" 500 124757
+ [INFO] 2020-03-29 21:23:33,092 [MainThread:4084] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [ERROR] 2020-03-29 21:23:38,889 [Thread-1:13376] [interface:30] [users_view:get] - {"username": [{"message": "This field is required.", "code": "required"}], "password": [{"message": "This field is required.", "code": "required"}]}
+ [ERROR] 2020-03-29 21:23:38,925 [Thread-1:13376] [django.request:228] [log:log_response] - Internal Server Error: /api/backend/users/
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PythonTest\django_interface_project\interface_main\views\user\users_view.py", line 31, in get
+    raise MyException()
+interface_main.exception.my_exception.MyException: 参数错误
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py", line 31, in process_exception
+    return response_failed(code, message)
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 22, in response_failed
+    return response_json(False, code, message, {})
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 14, in response_json
+    return JsonResponse(result, safe=False)
+  File "D:\python3.6.5\lib\site-packages\django\http\response.py", line 587, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\python3.6.5\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\python3.6.5\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\python3.6.5\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python3.6.5\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\python3.6.5\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'type' is not JSON serializable
+ [ERROR] 2020-03-29 21:23:38,927 [Thread-1:13376] [django.server:157] [basehttp:log_message] - "GET /api/backend/users/?username=&password= HTTP/1.1" 500 124588
+ [INFO] 2020-03-29 21:23:54,069 [MainThread:13944] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-29 21:24:03,153 [Thread-1:14060] [django.server:157] [basehttp:log_message] - "GET / HTTP/1.1" 200 101
+ [INFO] 2020-03-29 21:24:03,176 [Thread-1:14060] [django.server:157] [basehttp:log_message] - "GET /favicon.ico HTTP/1.1" 200 101
+ [INFO] 2020-03-29 21:24:54,202 [Thread-3:13724] [django.server:157] [basehttp:log_message] - "POST /api/backend/users/ HTTP/1.1" 200 91
+ [INFO] 2020-03-29 21:24:56,308 [Thread-1:14060] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 101
+ [ERROR] 2020-03-29 21:24:56,346 [Thread-4:11344] [django.request:228] [log:log_response] - Internal Server Error: /api/backend/user/info/
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PythonTest\django_interface_project\interface_main\views\user\user_info_view.py", line 24, in get
+    raise MyException(message="用户没有登录")
+interface_main.exception.my_exception.MyException: 用户没有登录
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py", line 31, in process_exception
+    return response_failed(code, message)
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 22, in response_failed
+    return response_json(False, code, message, {})
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 14, in response_json
+    return JsonResponse(result, safe=False)
+  File "D:\python3.6.5\lib\site-packages\django\http\response.py", line 587, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\python3.6.5\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\python3.6.5\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\python3.6.5\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python3.6.5\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\python3.6.5\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'type' is not JSON serializable
+ [ERROR] 2020-03-29 21:24:56,348 [Thread-4:11344] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 500 123556
+ [INFO] 2020-03-29 21:47:05,606 [Thread-5:180] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 101
+ [ERROR] 2020-03-29 21:47:05,645 [Thread-6:12892] [django.request:228] [log:log_response] - Internal Server Error: /api/backend/user/info/
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PythonTest\django_interface_project\interface_main\views\user\user_info_view.py", line 24, in get
+    raise MyException(message="用户没有登录")
+interface_main.exception.my_exception.MyException: 用户没有登录
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py", line 31, in process_exception
+    return response_failed(code, message)
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 22, in response_failed
+    return response_json(False, code, message, {})
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 14, in response_json
+    return JsonResponse(result, safe=False)
+  File "D:\python3.6.5\lib\site-packages\django\http\response.py", line 587, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\python3.6.5\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\python3.6.5\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\python3.6.5\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python3.6.5\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\python3.6.5\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'type' is not JSON serializable
+ [ERROR] 2020-03-29 21:47:05,646 [Thread-6:12892] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 500 123556
+ [INFO] 2020-03-29 21:49:53,296 [Thread-6:12892] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 101
+ [ERROR] 2020-03-29 21:49:53,326 [Thread-5:180] [django.request:228] [log:log_response] - Internal Server Error: /api/backend/user/info/
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PythonTest\django_interface_project\interface_main\views\user\user_info_view.py", line 24, in get
+    raise MyException(message="用户没有登录")
+interface_main.exception.my_exception.MyException: 用户没有登录
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py", line 31, in process_exception
+    return response_failed(code, message)
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 22, in response_failed
+    return response_json(False, code, message, {})
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 14, in response_json
+    return JsonResponse(result, safe=False)
+  File "D:\python3.6.5\lib\site-packages\django\http\response.py", line 587, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\python3.6.5\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\python3.6.5\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\python3.6.5\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python3.6.5\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\python3.6.5\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'type' is not JSON serializable
+ [ERROR] 2020-03-29 21:49:53,328 [Thread-5:180] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 500 123556
+ [INFO] 2020-03-29 21:50:08,609 [Thread-5:180] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 101
+ [ERROR] 2020-03-29 21:50:08,641 [Thread-6:12892] [django.request:228] [log:log_response] - Internal Server Error: /api/backend/user/info/
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PythonTest\django_interface_project\interface_main\views\user\user_info_view.py", line 24, in get
+    raise MyException(message="用户没有登录")
+interface_main.exception.my_exception.MyException: 用户没有登录
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py", line 31, in process_exception
+    return response_failed(code, message)
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 22, in response_failed
+    return response_json(False, code, message, {})
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 14, in response_json
+    return JsonResponse(result, safe=False)
+  File "D:\python3.6.5\lib\site-packages\django\http\response.py", line 587, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\python3.6.5\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\python3.6.5\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\python3.6.5\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python3.6.5\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\python3.6.5\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'type' is not JSON serializable
+ [ERROR] 2020-03-29 21:50:08,642 [Thread-6:12892] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 500 123556
+ [INFO] 2020-03-29 21:50:33,510 [Thread-6:12892] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 101
+ [ERROR] 2020-03-29 21:50:33,540 [Thread-5:180] [django.request:228] [log:log_response] - Internal Server Error: /api/backend/user/info/
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PythonTest\django_interface_project\interface_main\views\user\user_info_view.py", line 24, in get
+    raise MyException(message="用户没有登录")
+interface_main.exception.my_exception.MyException: 用户没有登录
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py", line 31, in process_exception
+    return response_failed(code, message)
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 22, in response_failed
+    return response_json(False, code, message, {})
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 14, in response_json
+    return JsonResponse(result, safe=False)
+  File "D:\python3.6.5\lib\site-packages\django\http\response.py", line 587, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\python3.6.5\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\python3.6.5\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\python3.6.5\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python3.6.5\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\python3.6.5\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'type' is not JSON serializable
+ [ERROR] 2020-03-29 21:50:33,541 [Thread-5:180] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 500 123556
+ [INFO] 2020-03-29 21:51:35,571 [Thread-5:180] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 101
+ [ERROR] 2020-03-29 21:51:35,613 [Thread-6:12892] [django.request:228] [log:log_response] - Internal Server Error: /api/backend/user/info/
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PythonTest\django_interface_project\interface_main\views\user\user_info_view.py", line 24, in get
+    raise MyException(message="用户没有登录")
+interface_main.exception.my_exception.MyException: 用户没有登录
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py", line 31, in process_exception
+    return response_failed(code, message)
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 22, in response_failed
+    return response_json(False, code, message, {})
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 14, in response_json
+    return JsonResponse(result, safe=False)
+  File "D:\python3.6.5\lib\site-packages\django\http\response.py", line 587, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\python3.6.5\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\python3.6.5\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\python3.6.5\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python3.6.5\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\python3.6.5\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'type' is not JSON serializable
+ [ERROR] 2020-03-29 21:51:35,615 [Thread-6:12892] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 500 123556
+ [INFO] 2020-03-29 22:07:57,420 [Thread-7:14140] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 101
+ [INFO] 2020-03-29 22:07:57,430 [Thread-9:13932] [django.server:157] [basehttp:log_message] - "GET /api/backend/services/ HTTP/1.1" 200 101
+ [ERROR] 2020-03-29 22:07:57,461 [Thread-8:11864] [django.request:228] [log:log_response] - Internal Server Error: /api/backend/user/info/
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PythonTest\django_interface_project\interface_main\views\user\user_info_view.py", line 24, in get
+    raise MyException(message="用户没有登录")
+interface_main.exception.my_exception.MyException: 用户没有登录
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py", line 31, in process_exception
+    return response_failed(code, message)
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 22, in response_failed
+    return response_json(False, code, message, {})
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 14, in response_json
+    return JsonResponse(result, safe=False)
+  File "D:\python3.6.5\lib\site-packages\django\http\response.py", line 587, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\python3.6.5\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\python3.6.5\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\python3.6.5\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python3.6.5\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\python3.6.5\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'type' is not JSON serializable
+ [ERROR] 2020-03-29 22:07:57,462 [Thread-8:11864] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 500 123556
+ [INFO] 2020-03-29 23:00:22,412 [Thread-10:12688] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 101
+ [INFO] 2020-03-29 23:00:22,421 [Thread-12:2528] [django.server:157] [basehttp:log_message] - "GET /api/backend/services/ HTTP/1.1" 200 101
+ [ERROR] 2020-03-29 23:00:22,450 [Thread-11:11488] [django.request:228] [log:log_response] - Internal Server Error: /api/backend/user/info/
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PythonTest\django_interface_project\interface_main\views\user\user_info_view.py", line 24, in get
+    raise MyException(message="用户没有登录")
+interface_main.exception.my_exception.MyException: 用户没有登录
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py", line 31, in process_exception
+    return response_failed(code, message)
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 22, in response_failed
+    return response_json(False, code, message, {})
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 14, in response_json
+    return JsonResponse(result, safe=False)
+  File "D:\python3.6.5\lib\site-packages\django\http\response.py", line 587, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\python3.6.5\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\python3.6.5\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\python3.6.5\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python3.6.5\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\python3.6.5\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'type' is not JSON serializable
+ [ERROR] 2020-03-29 23:00:22,451 [Thread-11:11488] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 500 123556
+ [INFO] 2020-03-29 23:00:58,741 [Thread-11:11488] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 101
+ [INFO] 2020-03-29 23:00:58,747 [Thread-10:12688] [django.server:157] [basehttp:log_message] - "GET /api/backend/services/ HTTP/1.1" 200 101
+ [ERROR] 2020-03-29 23:00:58,777 [Thread-12:2528] [django.request:228] [log:log_response] - Internal Server Error: /api/backend/user/info/
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PythonTest\django_interface_project\interface_main\views\user\user_info_view.py", line 24, in get
+    raise MyException(message="用户没有登录")
+interface_main.exception.my_exception.MyException: 用户没有登录
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py", line 31, in process_exception
+    return response_failed(code, message)
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 22, in response_failed
+    return response_json(False, code, message, {})
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 14, in response_json
+    return JsonResponse(result, safe=False)
+  File "D:\python3.6.5\lib\site-packages\django\http\response.py", line 587, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\python3.6.5\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\python3.6.5\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\python3.6.5\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python3.6.5\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\python3.6.5\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'type' is not JSON serializable
+ [ERROR] 2020-03-29 23:00:58,778 [Thread-12:2528] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 500 123556
+ [INFO] 2020-03-29 23:02:07,323 [Thread-12:2528] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 101
+ [INFO] 2020-03-29 23:02:07,330 [Thread-11:11488] [django.server:157] [basehttp:log_message] - "GET /api/backend/services/ HTTP/1.1" 200 101
+ [ERROR] 2020-03-29 23:02:07,357 [Thread-10:12688] [django.request:228] [log:log_response] - Internal Server Error: /api/backend/user/info/
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PythonTest\django_interface_project\interface_main\views\user\user_info_view.py", line 24, in get
+    raise MyException(message="用户没有登录")
+interface_main.exception.my_exception.MyException: 用户没有登录
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py", line 31, in process_exception
+    return response_failed(code, message)
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 22, in response_failed
+    return response_json(False, code, message, {})
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 14, in response_json
+    return JsonResponse(result, safe=False)
+  File "D:\python3.6.5\lib\site-packages\django\http\response.py", line 587, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\python3.6.5\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\python3.6.5\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\python3.6.5\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python3.6.5\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\python3.6.5\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'type' is not JSON serializable
+ [ERROR] 2020-03-29 23:02:07,359 [Thread-10:12688] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 500 123556
+ [INFO] 2020-03-29 23:11:49,694 [MainThread:13944] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_list_view.py changed, reloading.
+ [INFO] 2020-03-29 23:11:51,354 [MainThread:14100] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-29 23:12:41,872 [MainThread:14100] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_list_view.py changed, reloading.
+ [INFO] 2020-03-29 23:12:44,713 [MainThread:13912] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-29 23:12:53,692 [MainThread:13412] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-29 23:12:58,524 [Thread-1:12200] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 101
+ [INFO] 2020-03-29 23:12:58,524 [Thread-3:11460] [django.server:157] [basehttp:log_message] - "GET /api/backend/services/ HTTP/1.1" 200 101
+ [ERROR] 2020-03-29 23:12:58,571 [Thread-2:7120] [django.request:228] [log:log_response] - Internal Server Error: /api/backend/user/info/
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PythonTest\django_interface_project\interface_main\views\user\user_info_view.py", line 24, in get
+    raise MyException(message="用户没有登录")
+interface_main.exception.my_exception.MyException: 用户没有登录
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py", line 31, in process_exception
+    return response_failed(code, message)
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 22, in response_failed
+    return response_json(False, code, message, {})
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 14, in response_json
+    return JsonResponse(result, safe=False)
+  File "D:\python3.6.5\lib\site-packages\django\http\response.py", line 587, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\python3.6.5\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\python3.6.5\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\python3.6.5\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python3.6.5\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\python3.6.5\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'type' is not JSON serializable
+ [ERROR] 2020-03-29 23:12:58,574 [Thread-2:7120] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 500 123556
+ [INFO] 2020-03-29 23:13:48,526 [Thread-1:12200] [django.server:157] [basehttp:log_message] - "GET /api/backend/services/ HTTP/1.1" 200 101
+ [INFO] 2020-03-29 23:13:48,526 [Thread-2:7120] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 101
+ [ERROR] 2020-03-29 23:13:48,559 [Thread-3:11460] [django.request:228] [log:log_response] - Internal Server Error: /api/backend/user/info/
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PythonTest\django_interface_project\interface_main\views\user\user_info_view.py", line 24, in get
+    raise MyException(message="用户没有登录")
+interface_main.exception.my_exception.MyException: 用户没有登录
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py", line 31, in process_exception
+    return response_failed(code, message)
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 22, in response_failed
+    return response_json(False, code, message, {})
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 14, in response_json
+    return JsonResponse(result, safe=False)
+  File "D:\python3.6.5\lib\site-packages\django\http\response.py", line 587, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\python3.6.5\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\python3.6.5\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\python3.6.5\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python3.6.5\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\python3.6.5\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'type' is not JSON serializable
+ [ERROR] 2020-03-29 23:13:48,561 [Thread-3:11460] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 500 123556
+ [INFO] 2020-03-29 23:13:49,205 [Thread-3:11460] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 101
+ [INFO] 2020-03-29 23:13:49,205 [Thread-1:12200] [django.server:157] [basehttp:log_message] - "GET /api/backend/services/ HTTP/1.1" 200 101
+ [ERROR] 2020-03-29 23:13:49,239 [Thread-2:7120] [django.request:228] [log:log_response] - Internal Server Error: /api/backend/user/info/
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PythonTest\django_interface_project\interface_main\views\user\user_info_view.py", line 24, in get
+    raise MyException(message="用户没有登录")
+interface_main.exception.my_exception.MyException: 用户没有登录
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py", line 31, in process_exception
+    return response_failed(code, message)
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 22, in response_failed
+    return response_json(False, code, message, {})
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 14, in response_json
+    return JsonResponse(result, safe=False)
+  File "D:\python3.6.5\lib\site-packages\django\http\response.py", line 587, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\python3.6.5\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\python3.6.5\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\python3.6.5\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python3.6.5\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\python3.6.5\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'type' is not JSON serializable
+ [ERROR] 2020-03-29 23:13:49,242 [Thread-2:7120] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 500 123556
+ [INFO] 2020-03-29 23:16:54,145 [Thread-2:7120] [django.server:157] [basehttp:log_message] - "GET /api/backend/services/ HTTP/1.1" 200 101
+ [INFO] 2020-03-29 23:16:59,024 [Thread-3:11460] [django.server:157] [basehttp:log_message] - "GET /api/backend/services/ HTTP/1.1" 200 101
+ [INFO] 2020-03-29 23:16:59,024 [Thread-2:7120] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 101
+ [ERROR] 2020-03-29 23:16:59,058 [Thread-1:12200] [django.request:228] [log:log_response] - Internal Server Error: /api/backend/user/info/
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PythonTest\django_interface_project\interface_main\views\user\user_info_view.py", line 24, in get
+    raise MyException(message="用户没有登录")
+interface_main.exception.my_exception.MyException: 用户没有登录
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py", line 31, in process_exception
+    return response_failed(code, message)
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 22, in response_failed
+    return response_json(False, code, message, {})
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 14, in response_json
+    return JsonResponse(result, safe=False)
+  File "D:\python3.6.5\lib\site-packages\django\http\response.py", line 587, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\python3.6.5\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\python3.6.5\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\python3.6.5\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python3.6.5\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\python3.6.5\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'type' is not JSON serializable
+ [ERROR] 2020-03-29 23:16:59,059 [Thread-1:12200] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 500 123556
+ [INFO] 2020-03-29 23:16:59,981 [Thread-1:12200] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 101
+ [INFO] 2020-03-29 23:16:59,982 [Thread-3:11460] [django.server:157] [basehttp:log_message] - "GET /api/backend/services/ HTTP/1.1" 200 101
+ [ERROR] 2020-03-29 23:17:00,020 [Thread-2:7120] [django.request:228] [log:log_response] - Internal Server Error: /api/backend/user/info/
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PythonTest\django_interface_project\interface_main\views\user\user_info_view.py", line 24, in get
+    raise MyException(message="用户没有登录")
+interface_main.exception.my_exception.MyException: 用户没有登录
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py", line 31, in process_exception
+    return response_failed(code, message)
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 22, in response_failed
+    return response_json(False, code, message, {})
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 14, in response_json
+    return JsonResponse(result, safe=False)
+  File "D:\python3.6.5\lib\site-packages\django\http\response.py", line 587, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\python3.6.5\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\python3.6.5\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\python3.6.5\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python3.6.5\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\python3.6.5\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'type' is not JSON serializable
+ [ERROR] 2020-03-29 23:17:00,021 [Thread-2:7120] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 500 123556
+ [INFO] 2020-03-29 23:19:32,118 [MainThread:13412] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_detail_view.py changed, reloading.
+ [INFO] 2020-03-29 23:19:34,982 [MainThread:2076] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-29 23:20:19,721 [MainThread:2076] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_detail_view.py changed, reloading.
+ [INFO] 2020-03-29 23:20:21,453 [MainThread:14148] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-29 23:20:24,759 [Thread-3:14172] [django.server:157] [basehttp:log_message] - "GET /api/backend/services/ HTTP/1.1" 200 101
+ [INFO] 2020-03-29 23:20:24,759 [Thread-1:12412] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 101
+ [ERROR] 2020-03-29 23:20:24,798 [Thread-2:9532] [django.request:228] [log:log_response] - Internal Server Error: /api/backend/user/info/
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PythonTest\django_interface_project\interface_main\views\user\user_info_view.py", line 24, in get
+    raise MyException(message="用户没有登录")
+interface_main.exception.my_exception.MyException: 用户没有登录
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py", line 31, in process_exception
+    return response_failed(code, message)
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 22, in response_failed
+    return response_json(False, code, message, {})
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 14, in response_json
+    return JsonResponse(result, safe=False)
+  File "D:\python3.6.5\lib\site-packages\django\http\response.py", line 587, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\python3.6.5\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\python3.6.5\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\python3.6.5\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python3.6.5\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\python3.6.5\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'type' is not JSON serializable
+ [ERROR] 2020-03-29 23:20:24,800 [Thread-2:9532] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 500 123556
+ [INFO] 2020-03-29 23:20:58,086 [Thread-2:9532] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 101
+ [INFO] 2020-03-29 23:20:58,087 [Thread-3:14172] [django.server:157] [basehttp:log_message] - "GET /api/backend/services/ HTTP/1.1" 200 101
+ [ERROR] 2020-03-29 23:20:58,119 [Thread-1:12412] [django.request:228] [log:log_response] - Internal Server Error: /api/backend/user/info/
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PythonTest\django_interface_project\interface_main\views\user\user_info_view.py", line 24, in get
+    raise MyException(message="用户没有登录")
+interface_main.exception.my_exception.MyException: 用户没有登录
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py", line 31, in process_exception
+    return response_failed(code, message)
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 22, in response_failed
+    return response_json(False, code, message, {})
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 14, in response_json
+    return JsonResponse(result, safe=False)
+  File "D:\python3.6.5\lib\site-packages\django\http\response.py", line 587, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\python3.6.5\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\python3.6.5\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\python3.6.5\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python3.6.5\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\python3.6.5\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'type' is not JSON serializable
+ [ERROR] 2020-03-29 23:20:58,121 [Thread-1:12412] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 500 123556
+ [INFO] 2020-03-29 23:21:01,069 [Thread-2:9532] [django.server:157] [basehttp:log_message] - "GET /api/backend/services/ HTTP/1.1" 200 101
+ [INFO] 2020-03-29 23:21:01,069 [Thread-1:12412] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 200 101
+ [ERROR] 2020-03-29 23:21:01,103 [Thread-3:14172] [django.request:228] [log:log_response] - Internal Server Error: /api/backend/user/info/
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python3.6.5\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PythonTest\django_interface_project\interface_main\views\user\user_info_view.py", line 24, in get
+    raise MyException(message="用户没有登录")
+interface_main.exception.my_exception.MyException: 用户没有登录
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python3.6.5\lib\site-packages\django\core\handlers\base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "E:\PythonTest\django_interface_project\interface_main\middleware\my_middle_ware.py", line 31, in process_exception
+    return response_failed(code, message)
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 22, in response_failed
+    return response_json(False, code, message, {})
+  File "E:\PythonTest\django_interface_project\interface_main\utils\http_format.py", line 14, in response_json
+    return JsonResponse(result, safe=False)
+  File "D:\python3.6.5\lib\site-packages\django\http\response.py", line 587, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\python3.6.5\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\python3.6.5\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\python3.6.5\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python3.6.5\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\python3.6.5\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'type' is not JSON serializable
+ [ERROR] 2020-03-29 23:21:01,104 [Thread-3:14172] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 500 123556
+ [INFO] 2020-03-30 21:02:46,669 [MainThread:9972] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-30 21:03:17,217 [Thread-2:14168] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-30 21:03:17,220 [Thread-3:11228] [django.server:157] [basehttp:log_message] - "GET /api/backend/services/ HTTP/1.1" 200 363
+ [WARNING] 2020-03-30 21:03:17,231 [Thread-1:4036] [django.request:228] [log:log_response] - Not Found: /test
+ [WARNING] 2020-03-30 21:03:17,232 [Thread-1:4036] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 404 2366
+ [INFO] 2020-03-30 21:43:21,913 [Thread-5:9428] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [WARNING] 2020-03-30 21:43:21,915 [Thread-4:13400] [django.request:228] [log:log_response] - Not Found: /test
+ [WARNING] 2020-03-30 21:43:21,916 [Thread-4:13400] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 404 2366
+ [INFO] 2020-03-30 21:43:21,917 [Thread-6:13888] [django.server:157] [basehttp:log_message] - "GET /api/backend/services/ HTTP/1.1" 200 363
+ [INFO] 2020-03-30 22:52:42,141 [MainThread:3156] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-30 22:53:20,358 [Thread-2:11720] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-30 22:53:20,363 [Thread-3:11296] [django.server:157] [basehttp:log_message] - "GET /api/backend/services/ HTTP/1.1" 200 363
+ [WARNING] 2020-03-30 22:53:20,369 [Thread-1:5564] [django.request:228] [log:log_response] - Not Found: /test
+ [WARNING] 2020-03-30 22:53:20,370 [Thread-1:5564] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 404 2366
+ [INFO] 2020-03-30 22:56:07,505 [Thread-3:11296] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-30 22:56:07,508 [Thread-2:11720] [django.server:157] [basehttp:log_message] - "GET /api/backend/services/ HTTP/1.1" 200 363
+ [WARNING] 2020-03-30 22:56:07,510 [Thread-1:5564] [django.request:228] [log:log_response] - Not Found: /test
+ [WARNING] 2020-03-30 22:56:07,511 [Thread-1:5564] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 404 2366
+ [INFO] 2020-03-30 22:58:39,363 [Thread-2:11720] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [WARNING] 2020-03-30 22:58:39,367 [Thread-1:5564] [django.request:228] [log:log_response] - Not Found: /test
+ [WARNING] 2020-03-30 22:58:39,367 [Thread-1:5564] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 404 2366
+ [INFO] 2020-03-30 22:58:39,369 [Thread-3:11296] [django.server:157] [basehttp:log_message] - "GET /api/backend/services/ HTTP/1.1" 200 363
+ [INFO] 2020-03-30 23:04:50,585 [Thread-5:9084] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [WARNING] 2020-03-30 23:04:50,589 [Thread-4:10828] [django.request:228] [log:log_response] - Not Found: /test
+ [WARNING] 2020-03-30 23:04:50,590 [Thread-4:10828] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 404 2366
+ [INFO] 2020-03-30 23:04:50,596 [Thread-6:11152] [django.server:157] [basehttp:log_message] - "GET /api/backend/services/ HTTP/1.1" 200 363
+ [INFO] 2020-03-30 23:09:44,944 [Thread-4:10828] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [WARNING] 2020-03-30 23:09:44,948 [Thread-6:11152] [django.request:228] [log:log_response] - Not Found: /test
+ [WARNING] 2020-03-30 23:09:44,949 [Thread-6:11152] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 404 2366
+ [INFO] 2020-03-30 23:09:44,949 [Thread-5:9084] [django.server:157] [basehttp:log_message] - "GET /api/backend/services/ HTTP/1.1" 200 363
+ [INFO] 2020-03-30 23:11:53,591 [Thread-6:11152] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-30 23:11:53,593 [Thread-4:10828] [django.server:157] [basehttp:log_message] - "GET /api/backend/services/ HTTP/1.1" 200 363
+ [WARNING] 2020-03-30 23:11:53,595 [Thread-5:9084] [django.request:228] [log:log_response] - Not Found: /test
+ [WARNING] 2020-03-30 23:11:53,595 [Thread-5:9084] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 404 2366
+ [INFO] 2020-03-30 23:13:30,047 [Thread-4:10828] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [WARNING] 2020-03-30 23:13:30,051 [Thread-5:9084] [django.request:228] [log:log_response] - Not Found: /test
+ [WARNING] 2020-03-30 23:13:30,051 [Thread-5:9084] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 404 2366
+ [INFO] 2020-03-30 23:13:30,054 [Thread-6:11152] [django.server:157] [basehttp:log_message] - "GET /api/backend/services/ HTTP/1.1" 200 363
+ [INFO] 2020-03-30 23:21:23,233 [Thread-8:10608] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [WARNING] 2020-03-30 23:21:23,235 [Thread-7:4624] [django.request:228] [log:log_response] - Not Found: /test
+ [WARNING] 2020-03-30 23:21:23,238 [Thread-7:4624] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 404 2366
+ [INFO] 2020-03-30 23:21:23,245 [Thread-9:11848] [django.server:157] [basehttp:log_message] - "GET /api/backend/services/ HTTP/1.1" 200 363
+ [INFO] 2020-03-30 23:22:00,473 [Thread-10:9736] [django.server:157] [basehttp:log_message] - "OPTIONS /api/backend/services/ HTTP/1.1" 200 0
+ [INFO] 2020-03-30 23:22:00,479 [Thread-9:11848] [django.server:157] [basehttp:log_message] - "POST /api/backend/services/ HTTP/1.1" 200 95
+ [INFO] 2020-03-30 23:22:03,729 [Thread-9:11848] [django.server:157] [basehttp:log_message] - "POST /api/backend/services/ HTTP/1.1" 200 95
+ [INFO] 2020-03-30 23:22:10,130 [Thread-9:11848] [django.server:157] [basehttp:log_message] - "POST /api/backend/services/ HTTP/1.1" 200 95
+ [INFO] 2020-03-30 23:22:11,976 [Thread-9:11848] [django.server:157] [basehttp:log_message] - "POST /api/backend/services/ HTTP/1.1" 200 95
+ [INFO] 2020-03-30 23:22:12,664 [Thread-9:11848] [django.server:157] [basehttp:log_message] - "POST /api/backend/services/ HTTP/1.1" 200 95
+ [INFO] 2020-03-30 23:22:13,208 [Thread-9:11848] [django.server:157] [basehttp:log_message] - "POST /api/backend/services/ HTTP/1.1" 200 95
+ [INFO] 2020-03-30 23:22:13,481 [Thread-9:11848] [django.server:157] [basehttp:log_message] - "POST /api/backend/services/ HTTP/1.1" 200 95
+ [INFO] 2020-03-30 23:22:13,712 [Thread-9:11848] [django.server:157] [basehttp:log_message] - "POST /api/backend/services/ HTTP/1.1" 200 95
+ [INFO] 2020-03-30 23:22:13,944 [Thread-9:11848] [django.server:157] [basehttp:log_message] - "POST /api/backend/services/ HTTP/1.1" 200 95
+ [INFO] 2020-03-30 23:22:14,160 [Thread-9:11848] [django.server:157] [basehttp:log_message] - "POST /api/backend/services/ HTTP/1.1" 200 95
+ [INFO] 2020-03-30 23:22:14,392 [Thread-9:11848] [django.server:157] [basehttp:log_message] - "POST /api/backend/services/ HTTP/1.1" 200 95
+ [INFO] 2020-03-30 23:22:18,661 [Thread-7:4624] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [WARNING] 2020-03-30 23:22:18,664 [Thread-9:11848] [django.request:228] [log:log_response] - Not Found: /test
+ [INFO] 2020-03-30 23:22:18,666 [Thread-8:10608] [django.server:157] [basehttp:log_message] - "GET /api/backend/services/ HTTP/1.1" 200 363
+ [WARNING] 2020-03-30 23:22:18,667 [Thread-9:11848] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 404 2366
+ [INFO] 2020-03-30 23:22:27,625 [Thread-9:11848] [django.server:157] [basehttp:log_message] - "POST /api/backend/services/ HTTP/1.1" 200 95
+ [INFO] 2020-03-30 23:22:32,057 [Thread-8:10608] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [WARNING] 2020-03-30 23:22:32,061 [Thread-9:11848] [django.request:228] [log:log_response] - Not Found: /test
+ [INFO] 2020-03-30 23:22:32,063 [Thread-7:4624] [django.server:157] [basehttp:log_message] - "GET /api/backend/services/ HTTP/1.1" 200 363
+ [WARNING] 2020-03-30 23:22:32,063 [Thread-9:11848] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 404 2366
+ [WARNING] 2020-03-30 23:30:11,935 [Thread-11:10428] [django.request:228] [log:log_response] - Not Found: /test
+ [INFO] 2020-03-30 23:30:11,936 [Thread-12:10236] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [WARNING] 2020-03-30 23:30:11,941 [Thread-11:10428] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 404 2366
+ [INFO] 2020-03-30 23:30:11,947 [Thread-13:8384] [django.server:157] [basehttp:log_message] - "GET /api/backend/services/ HTTP/1.1" 200 363
+ [INFO] 2020-03-30 23:30:24,736 [Thread-13:8384] [django.server:157] [basehttp:log_message] - "POST /api/backend/services/ HTTP/1.1" 200 95
+ [INFO] 2020-03-30 23:30:26,136 [Thread-13:8384] [django.server:157] [basehttp:log_message] - "POST /api/backend/services/ HTTP/1.1" 200 95
+ [INFO] 2020-03-30 23:41:11,893 [Thread-15:3648] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [WARNING] 2020-03-30 23:41:11,897 [Thread-14:872] [django.request:228] [log:log_response] - Not Found: /test
+ [INFO] 2020-03-30 23:41:11,897 [Thread-16:11352] [django.server:157] [basehttp:log_message] - "GET /api/backend/services/ HTTP/1.1" 200 363
+ [WARNING] 2020-03-30 23:41:11,898 [Thread-14:872] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 404 2366
+ [INFO] 2020-03-30 23:43:45,317 [Thread-17:10820] [django.server:157] [basehttp:log_message] - "OPTIONS /api/backend/services/ HTTP/1.1" 200 0
+ [INFO] 2020-03-30 23:43:45,321 [Thread-14:872] [django.server:157] [basehttp:log_message] - "POST /api/backend/services/ HTTP/1.1" 200 95
+ [INFO] 2020-03-30 23:52:53,895 [Thread-19:10608] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [WARNING] 2020-03-30 23:52:53,899 [Thread-18:9596] [django.request:228] [log:log_response] - Not Found: /test
+ [WARNING] 2020-03-30 23:52:53,900 [Thread-18:9596] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 404 2366
+ [INFO] 2020-03-30 23:52:53,908 [Thread-20:11844] [django.server:157] [basehttp:log_message] - "GET /api/backend/services/ HTTP/1.1" 200 363
+ [INFO] 2020-03-30 23:54:20,809 [Thread-18:9596] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [WARNING] 2020-03-30 23:54:20,811 [Thread-20:11844] [django.request:228] [log:log_response] - Not Found: /test
+ [WARNING] 2020-03-30 23:54:20,814 [Thread-20:11844] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 404 2366
+ [INFO] 2020-03-30 23:54:20,815 [Thread-19:10608] [django.server:157] [basehttp:log_message] - "GET /api/backend/services/ HTTP/1.1" 200 363
+ [INFO] 2020-03-30 23:58:37,013 [Thread-20:11844] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [WARNING] 2020-03-30 23:58:37,015 [Thread-19:10608] [django.request:228] [log:log_response] - Not Found: /test
+ [WARNING] 2020-03-30 23:58:37,016 [Thread-19:10608] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 404 2366
+ [INFO] 2020-03-30 23:58:37,019 [Thread-18:9596] [django.server:157] [basehttp:log_message] - "GET /api/backend/services/ HTTP/1.1" 200 363
+ [INFO] 2020-03-30 23:58:44,357 [Thread-21:2664] [django.server:157] [basehttp:log_message] - "OPTIONS /api/backend/services/ HTTP/1.1" 200 0
+ [INFO] 2020-03-30 23:58:44,362 [Thread-18:9596] [django.server:157] [basehttp:log_message] - "POST /api/backend/services/ HTTP/1.1" 200 95
+ [INFO] 2020-03-30 23:58:46,099 [Thread-18:9596] [django.server:157] [basehttp:log_message] - "POST /api/backend/services/ HTTP/1.1" 200 95
+ [INFO] 2020-03-30 23:58:46,635 [Thread-18:9596] [django.server:157] [basehttp:log_message] - "POST /api/backend/services/ HTTP/1.1" 200 95
+ [INFO] 2020-03-30 23:58:47,147 [Thread-18:9596] [django.server:157] [basehttp:log_message] - "POST /api/backend/services/ HTTP/1.1" 200 95
+ [INFO] 2020-03-30 23:58:47,611 [Thread-18:9596] [django.server:157] [basehttp:log_message] - "POST /api/backend/services/ HTTP/1.1" 200 95
+ [INFO] 2020-03-30 23:58:47,965 [Thread-18:9596] [django.server:157] [basehttp:log_message] - "POST /api/backend/services/ HTTP/1.1" 200 95
+ [INFO] 2020-03-31 00:04:42,661 [MainThread:3156] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_list_view.py changed, reloading.
+ [INFO] 2020-03-31 00:04:45,683 [MainThread:8732] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-31 00:05:22,944 [MainThread:11884] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader
+ [INFO] 2020-03-31 00:05:47,935 [Thread-2:8472] [django.server:157] [basehttp:log_message] - "GET /api/backend/user/info/ HTTP/1.1" 200 93
+ [INFO] 2020-03-31 00:05:47,946 [Thread-3:2944] [django.server:157] [basehttp:log_message] - "GET /api/backend/services/ HTTP/1.1" 200 363
+ [WARNING] 2020-03-31 00:05:47,948 [Thread-1:10432] [django.request:228] [log:log_response] - Not Found: /test
+ [WARNING] 2020-03-31 00:05:47,949 [Thread-1:10432] [django.server:157] [basehttp:log_message] - "GET /test HTTP/1.1" 404 2366
+ [INFO] 2020-03-31 00:05:54,204 [Thread-1:10432] [django.server:157] [basehttp:log_message] - "POST /api/backend/services/ HTTP/1.1" 200 95
+ [INFO] 2020-03-31 00:08:56,739 [MainThread:11884] [django.utils.autoreload:222] [autoreload:trigger_reload] - E:\PythonTest\django_interface_project\interface_main\views\service\service_list_view.py changed, reloading.
+ [INFO] 2020-03-31 00:08:59,731 [MainThread:11300] [django.utils.autoreload:598] [autoreload:run_with_reloader] - Watching for file changes with StatReloader

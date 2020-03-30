@@ -47,12 +47,12 @@ class ServiceDetailView(View):
         """
         service = Service.objects.filter(id=service_id).first()
         if service is None:
-            response_success()
+            return response_success()
 
         body = request.body
 
         if not body:
-            response_success()
+            return response_success()
         data = json.load(body)
         form = ServiceForm(data)
 
@@ -64,7 +64,7 @@ class ServiceDetailView(View):
             return response_success()
         else:
             raise MyException()
-        return response_success()
+
 
 
     def delete(self, request,service_id, *args, **kwargs):

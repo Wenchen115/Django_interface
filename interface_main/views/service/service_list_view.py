@@ -1,16 +1,10 @@
+# coding=utf-8
 import json
 
 from django.forms import model_to_dict
 from django.views.generic import View
-from django.contrib.auth.models import User
-from django.contrib.auth import authenticate,login
-
-from django.shortcuts import render
 from interface_main.utils.http_format import response_success
-from  django.http import request
 from interface_main.exception.my_exception import MyException
-from interface_main.forms.user import UserForm
-from interface_main.utils.log import default_log
 from interface_main.models.service import Service, ROOT_ID
 from interface_main.forms.service import ServiceForm
 
@@ -20,6 +14,8 @@ class ServiceListView(View):
     def get_service_tree_recursion(cls,parent):
         res = []
         children_nodes = Service.objects.filter(parent=parent)
+        if children_nodes.count() == 0:
+            return res
 
         if ROOT_ID== parent:
             parent_name = ""
@@ -29,6 +25,7 @@ class ServiceListView(View):
                 parent_name = ""
             else:
                 parent_name=obj.name
+
         for child in children_nodes:
             tmp = model_to_dict(child)
             tmp['children'] = cls.get_service_tree_recursion(child.id)  # 递归
@@ -60,7 +57,7 @@ class ServiceListView(View):
         body = request.body
 
         if not body:
-            response_success()
+            return response_success()
         data = json.load(body)
         form = ServiceForm(data)
 
